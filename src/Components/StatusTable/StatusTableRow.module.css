@@ -1,0 +1,13 @@
+.StatusTableRow {
+    width: 100%;
+}
+
+.LineColumn {
+    width: 50%;
+    display: inline-block;
+}
+
+.StatusColumn {
+    width: 50%;
+    display: inline-block;
+}

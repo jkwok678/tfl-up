@@ -18,6 +18,11 @@
     color: white;
 }
 
+.elizabeth {
+    background: #6950a1;
+    color: white;
+}
+
 .hammersmith-city {
     background: #f4a9be;
     color: #0019a8;
@@ -54,18 +59,8 @@
     color: #0019a8;
 }
 
-.overground {
-    background: #ef7b10;
-    color: white;
-}
-
 .london-overground {
     background: #ef7b10;
-    color: white;
-}
-
-.tflrail {
-    background: #0019a8;
     color: white;
 }
 
