@@ -4,23 +4,20 @@ import StatusTableRow from "./StatusTableRow";
 import lineColours from "../lineColours.module.css";
 import statusTableStyle from "./StatusTable.module.css";
 function StatusTable(props) {
-    const { mode } = props;
+    const { mode, api } = props;
     const [tubeData, setTubeData] = useState([]);
 
     useEffect(() => {
         getTFLData();
-    }, []);
+    }, [api]);
 
     function getTFLData() {
-        fetch(
-            "https://api.tfl.gov.uk/Line/Mode/tube,overground,dlr,elizabeth-line/Status?app_key=23a57889b1cc471d8080b321a0eb9ae3"
-        )
+        fetch(api)
             .then((response) => response.json())
             .then((result) => {
                 setTubeData(result);
             });
     }
-    console.log(tubeData);
 
     if (mode === "Standard") {
         return (
