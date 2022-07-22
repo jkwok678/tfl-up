@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function Checkbox(props) {
-    const { value, checked, index, onChange, modeNumber } = props;
+    const { value, checked, onChange, modeNumber } = props;
     const [ticked, setTicked] = useState(checked);
 
     function canCheck() {
@@ -13,7 +13,6 @@ function Checkbox(props) {
             return false;
         }
     }
-    console.log(modeNumber);
     return (
         <label>
             <input
@@ -22,7 +21,6 @@ function Checkbox(props) {
                 onChange={(event) => {
                     if (canCheck()) {
                         setTicked(!ticked);
-                        console.log(event);
                         onChange(event);
                     }
                 }}

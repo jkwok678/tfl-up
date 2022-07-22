@@ -1,3 +1,20 @@
 .StatusTable {
-    width: auto;
+    max-width: 800px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.goodServiceRow {
+    background: #0009ab;
+    color: white;
+    flex: 1;
+}
+
+.goodServiceText {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
 }

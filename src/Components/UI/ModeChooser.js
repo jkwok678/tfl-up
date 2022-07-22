@@ -78,7 +78,6 @@ function ModeChooser(props) {
 
     function updateAPI() {
         let search = modes.join(",");
-        console.log(search);
         setAPI(
             `https://api.tfl.gov.uk/Line/Mode/${search}/Status?app_key=23a57889b1cc471d8080b321a0eb9ae3`
         );
